@@ -4,6 +4,7 @@ import { stackNavigatorFactory } from "react-nativescript-navigation";
 
 import { ScreenOne } from "./ScreenOne";
 import { ScreenTwo } from "./ScreenTwo";
+import { WritingPad} from "./WritingPad"
 
 const StackNavigator = stackNavigatorFactory();
 
@@ -27,6 +28,10 @@ export const MainStack = () => (
             />
             <StackNavigator.Screen
                 name="Two"
+                component={ScreenTwo}
+            />
+            <StackNavigator.Screen
+                name="Write"
                 component={ScreenTwo}
             />
         </StackNavigator.Navigator>
